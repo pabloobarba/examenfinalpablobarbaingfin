@@ -1,11 +1,14 @@
 import streamlit as st
+import matplotlib.pyplot as plt
+import plotly.express as px
 import pandas as pd
 from datetime import timedelta
-import yfinance as yf
 import numpy as np
+import yfinance as yf
+import plotly.graph_objects as go
 import time
 import requests
-
+from yfinance import download
 
 # Configuración de la página
 st.set_page_config(page_title="Análisis Financiero", layout="wide")
@@ -669,8 +672,6 @@ if ticker_input:
             st.caption("La volatilidad anualizada representa el riesgo del activo, calculado como la desviación estándar de los rendimientos diarios multiplicada por la raíz cuadrada de 252 (días hábiles por año).")
             st.dataframe(pd.DataFrame(volatilidades), use_container_width=True)
 
-
-        import plotly.express as px
 
         st.divider()
         st.header("🌐 Visualización de Frontera Eficiente")
