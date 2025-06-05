@@ -4,7 +4,7 @@ from datetime import timedelta
 import numpy as np
 import time
 import requests
-from yfinance import download
+
 
 # Configuración de la página
 st.set_page_config(page_title="Análisis Financiero", layout="wide")
