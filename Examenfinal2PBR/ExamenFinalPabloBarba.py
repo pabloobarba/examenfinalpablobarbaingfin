@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import timedelta
+import yfinance as yf
 import numpy as np
 import time
 import requests
